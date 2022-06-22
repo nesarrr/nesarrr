@@ -1,0 +1,15 @@
+from instapy import InstaPy
+
+session = InstaPy(username="mr.gravedigger2003", password="nesfun171819!!!")
+session.login()
+
+
+session.set_do_comment(enabled=True, percentage=100)
+session.set_comments(['Nice!', 'awesome', 'hey', 'nice post'])
+
+session.set_do_follow(enabled=True, percentage=100)
+
+session.like_by_tags(['bmw', 'tesla'], amount=5)
+
+
+session.end()
